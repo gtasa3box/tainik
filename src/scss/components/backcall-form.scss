@@ -5,6 +5,9 @@
         padding: 100px 40px;
         background-color: black;
         border: 2px solid white;
+        @media (max-width:400px) {
+            padding: 80px 10px;
+        }
     }
     &__title {
         font-family: 'Exo 2',sans-serif;

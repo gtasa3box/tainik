@@ -45,6 +45,11 @@
             from {opacity: 0;}
             to {opacity: 1;}
         }
+        @media (max-width:400px) {
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
         &:before {
             content: '';
             position: absolute;
