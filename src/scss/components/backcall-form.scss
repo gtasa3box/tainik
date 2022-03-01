@@ -1,0 +1,31 @@
+.form-backcall {
+    display: none;
+    padding: 0;
+    &__form {
+        padding: 100px 40px;
+        background-color: black;
+        border: 2px solid white;
+    }
+    &__title {
+        font-family: 'Exo 2',sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        color: white;
+    }
+    input {
+        width: 100%;
+        border: none;
+        outline: none !important;
+        height: 54px;
+        border: 2px solid white;
+        padding: 0 10px;
+        margin: 20px 0 30px;
+        font-family: 'Exo 2',sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+}

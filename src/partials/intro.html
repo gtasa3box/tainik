@@ -12,7 +12,7 @@
             </div>
 
             <div class="intro__btn">
-                <a class="btn">Заказать</a>
+                <a class="btn" data-fancybox data-src="#form-backcall">Заказать</a>
             </div>
 
             <div class="intro__animate">
@@ -24,8 +24,10 @@
     </div>
 </div>
 
-<div class="form-backcall">
+<div class="form-backcall" id="form-backcall">
     <form action="" class="form-backcall__form">
-        
+        <h2 class="form-backcall__title">Введите ваш телефон:</h2>
+        <input name="tel" type="tel" class="mask-phone">
+        <button type="submit" class="btn btn_form">Отправить</button>
     </form>
 </div>
