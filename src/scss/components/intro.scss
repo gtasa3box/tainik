@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+}
+
+.wrapper {
+    max-width: 1360px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.logo {
+    display: block;
+    background-image: url(../img/logo.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    color: white;
+    font-family: 'Exo 2',sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    height: 54px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s ease;
+    width: 294px;
+    &:hover {
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+    }
+}
+
+
+.intro {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/index_cover-white.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
+    }
+    &__content {
+        padding: 100px 0 200px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        height: 100%;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        a {
+            height: 46px;
+            width: 89px;
+            filter: brightness(0) invert(1);
+        }
+        span {
+            color: white;
+            font-family: 'Exo 2',sans-serif;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            margin-left: 10px;
+            max-width: 68px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+    &__title {
+        color: white;
+    }
+    &__btn {
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+}
+
