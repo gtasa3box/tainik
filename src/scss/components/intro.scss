@@ -21,9 +21,10 @@ body {
 .title {
     color: white;
     font-family: 'Exo 2',sans-serif;
+    // font-family: 'Russo One', sans-serif;
     font-size: 64px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 130%;
     text-align: center;
     text-transform: uppercase;
@@ -48,6 +49,43 @@ body {
         color: black;
     }
 }
+.img-anim {
+    display: block;
+    background-image: url(../img/anim.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    filter: brightness(0) invert(1);
+    opacity: 0.3;
+    // animation: 4s ease-in 0s infinite move_eye;
+    animation: 4s ease-in 0s infinite move_eye;
+    @keyframes move_eye { 
+        from { 
+            transform: rotate(180deg); 
+        } 
+        to { 
+            transform: rotate(-180deg); 
+        }  
+    }
+    &_2 {
+        width: 100px;
+        height: 150px;
+        position: relative;
+        top: -68px;
+        right: -145px;
+        animation: 4s ease-in 0s infinite reverse move_eye;
+        @keyframes move_eye { 
+            from { 
+                transform: rotate(0deg); 
+            } 
+            to { 
+                transform: rotate(360deg); 
+            }  
+        }
+    }
+}
 
 
 .intro {
@@ -66,7 +104,7 @@ body {
         opacity: 0.9;
     }
     &__content {
-        padding: 100px 0 200px;
+        padding: 100px 0 100px;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -79,6 +117,15 @@ body {
         position: absolute;
         top: 60px;
         left: 60px;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            border-bottom: 2px solid white;
+            width: 100%;
+            height: 1px;
+        }
         a {
             height: 46px;
             width: 89px;
@@ -95,6 +142,7 @@ body {
             max-width: 68px;
             text-align: left;
             text-transform: uppercase;
+            user-select: none;
         }
     }
     &__title {
@@ -104,6 +152,12 @@ body {
         color: white;
         display: flex;
         justify-content: center;
+        margin-top: 5px;
+    }
+    &__animate {
+        position: absolute;
+        bottom: 10px;
+        left: -100px;
     }
 }
 
