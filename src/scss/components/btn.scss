@@ -1,0 +1,19 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    height: 54px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s ease;
+    width: 294px;
+    &:hover {
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+    }
+}

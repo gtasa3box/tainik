@@ -4,6 +4,14 @@
 @import "fonts";
 @import "settings";
 
+//components
+@import "./components/general-styles";
+@import "./components/wrapper";
+@import "./components/logo";
+@import "./components/title";
+@import "./components/animate";
+@import "./components/btn";
+
 // подключения компонентов страницы
 @import "./components/intro";
 
